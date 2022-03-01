@@ -35,20 +35,20 @@ header{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .9);
-    opacity: .3;
+    opacity: .6;
     position: absolute;
 }
 
 h1{
     color: white;
-    text-shadow: 2px 2px 4px rgb(168, 156, 156);
+    text-shadow: 2px 2px 4px rgb(232, 205, 205);
     z-index: 1;
 }
 
 /* sidebar */
 .side{
     grid-area: side;
-    background: rgba(255, 0, 221, 0.281);
+    background: rgb(255, 200, 248);
     padding: 50px;
     line-height: 55px;
     display: flex;
