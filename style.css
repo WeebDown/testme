@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #555;
+}
+.container{
+    width: 80%;
+    /* height: 100vh; */
+    margin: 20px auto;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'header header header header'
+    'side content content content'
+    'side content content content'
+    'footer footer footer footer';
+    gap: 5px;
+}
+/* Header */
+header{
+    height: 200px;
+    grid-area: header;
+    background-image: url(1.jpg);
+    background-size: cover;
+    text-transform: capitalize;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    opacity: .3;
+    position: absolute;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(168, 156, 156);
+    z-index: 1;
+}
+
+/* sidebar */
+.side{
+    grid-area: side;
+    background: rgba(255, 0, 221, 0.281);
+    padding: 50px;
+    line-height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.side ul li{
+    cursor: pointer;
+    display: block;
+}
+.gambar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.gambar p{
+    text-align: center;
+    margin-top: -30px;
+}
+
+/* conten */
+
+.section{
+    grid-area: content;
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'banner1 banner1 text1 text1'
+    'banner1 banner1 text1 text1'
+    'text text banner2 banner2'
+    'text text banner2 banner2';
+    gap: 10px;
+}
+
+.baner1{
+    grid-area: banner1;
+
+}
+
+.baner2{
+    grid-area: banner2;
+}
+
+.baner1 img, .baner2 img{
+    width: 100%;
+    height: 300px;
+}
+
+.text1{
+    grid-area: text1;
+}
+
+.text2{
+    grid-area: text;
+}
+.text1, .text2{
+    background-color: rgba(255, 255, 255, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text1 p, .text2 p{
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    grid-area: footer;
+    background: rgb(0, 162, 255);
+    height: 90px;
+}
+.footer p{
+    text-align: center;
+    line-height: 90px;
+}
